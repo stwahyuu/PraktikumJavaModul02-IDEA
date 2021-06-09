@@ -11,12 +11,15 @@ public class MahasiswaBeraksi {
 
 
         Mahasiswa mahasiswa =new Mahasiswa();
-        mahasiswa.npm = "19630125";
-        mahasiswa.nama = "Septian Tri Wahyudin";
+        mahasiswa.setNama("19630125");
+        mahasiswa.setNama("Septian Tri Wahyudin");
 
+        System.out.println(mahasiswa.getNama());
 
         mahasiswa.tampilkanAtribut();
-
         System.out.println("Usia : " + mahasiswa.hitungUsia());
+
+        Mahasiswa m = new Mahasiswa("19630125", "Wahyu", new Date());
+        m.tampilkanAtribut();
     }
 }
